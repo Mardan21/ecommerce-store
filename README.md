@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-commerce Store (Frontend)
 
-## Getting Started
+This is the customer-facing frontend of a full-stack e-commerce platform built with **Next.js**. Users can browse products, add them to a shopping cart, and complete purchases through **Stripe**. The app communicates with a shared backend/database used by the `ecommerce-admin` dashboard.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Browse products with responsive, fast-loading pages (Next.js 14)
+- Add/remove items from cart with persistent state using Zustand
+- Checkout with secure payment integration via Stripe API
+- Clean UI built with Tailwind CSS (optional if implemented)
+- Connected to shared backend database via Prisma and PlanetScale
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend Framework**: Next.js (React, TypeScript)
+- **State Management**: Zustand
+- **ORM**: Prisma
+- **Database**: PlanetScale (MySQL)
+- **Payments**: Stripe API
+- **Other**: Supabase (optional for auth or storage, if used)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🧩 How It Works with `ecommerce-admin`
 
-## Learn More
+- Both `ecommerce-store` and `ecommerce-admin` share the same PlanetScale database.
+- Products added via the admin dashboard instantly appear in the store.
+- When a user checks out via Stripe in this app, order and payment data are recorded in the database and can be viewed in the admin dashboard.
 
-To learn more about Next.js, take a look at the following resources:
+## 📽️ Demonstration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This app was not deployed to production.  
+A demo is available on YouTube:  
+🎥 [Watch the demo](https://www.youtube.com/watch?v=lq6q3VwNKbE&ab_channel=MardanMahmut)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📦 Skills Demonstrated
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Full-stack architecture with Next.js and Prisma
+- State management using Zustand
+- Third-party API integration (Stripe)
+- Dynamic rendering (SSR/SSG)
+- Modular component design
