@@ -19,15 +19,11 @@ This is the customer-facing frontend of a full-stack e-commerce platform built w
 - **Payments**: Stripe API
 - **Other**: Supabase (optional for auth or storage, if used)
 
-## 🧩 How It Works with `ecommerce-admin`
+## 🧩 How It Works with [`ecommerce-admin`](https://github.com/Mardan21/ecommerce-admin) — Admin panel for managing products and tracking orders
 
 - Both `ecommerce-store` and `ecommerce-admin` share the same PlanetScale database.
 - Products added via the admin dashboard instantly appear in the store.
 - When a user checks out via Stripe in this app, order and payment data are recorded in the database and can be viewed in the admin dashboard.
-
-## 🔗 Related Projects
-
-- 🛠️ [E-commerce Admin Dashboard](https://github.com/Mardan21/ecommerce-admin) — Admin panel for managing products and tracking orders
 
 ## 📽️ Demonstration
 
